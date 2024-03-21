@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticos-Ride-Dashboard-Pricipal-page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+
+</head>
+
+<body>
+    <div class="button">
+        <button id="login" class="save">Add</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-start flex-row">
+                <div class="d-flex flex-column">
+                    <div class="p-2">
+                        <img class="image-size" src="../img/Logo.png" alt="Car Travel Image">
+                    </div>
+                    <div class="p-2">
+
+                        <div class="relative" style="display: flex;">
+                            <div class="menu-item" id="dashboard">Dashboard</div>
+                            <div class="menu-item" id="rides">Rides</div>
+                            <div class="menu-item" id="settings"> Settings</div>
+
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <h4 id="currentSection"></h4>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col d-flex justify-content-end mt-auto p-2">
+                Welcome &nbsp;
+                <p id="username"></p>
+                <img class="image-user" src="../img/user.jpg" alt="Car Travel Image">
+            </div>
+        </div>
+
+
+        <div id="panel-view" class="table-container">
+            <a href="#">Dashboard</a>
+            <span class="arrow">></span>
+            <h6>My Rides</h6>
+            <div class="card">
+                <div class="card-body">
+                    <p class="title">Your current list of Rides</p>
+                </div>
+                <table id="ViajesRegistrados" class="table table-bordered table-striped mt-4">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brete</td>
+                            <td>Barrio Los Angeles</td>
+                            <td>Ciudad Quesada</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Casa</td>
+                            <td>Ciudad Quesada</td>
+                            <td>Los Angeles</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Oficina Chepe</td>
+                            <td>Ciudad Quesada</td>
+                            <td>San Pedro</td>
+                            <td>
+                                <a href="#">View</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div id="rides-view">
+            <a href="#">Dashboard</a>
+            <span class="arrow">></span>
+            <a href="#">Rides</a>
+
+
+        </div>
+
+        <div id="settings-view">
+            <a href="#">Dashboard</a>
+            <span class="arrow">> Settings</span>
+            <div class="settings">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Input text">
+                <label for="speedAverage" class="form-label">speed Average</label>
+                <input type="text" class="form-control" id="speedAverage" placeholder="Input text">
+                <label for="aboutMe" class="form-label">About Me</label>
+                <div class="aboutMe">
+                    <textarea id="edit" placeholder="Something about me goes here"></textarea>
+                    <div class="button">
+                        <a href="dashboard.html">Cancel</a>
+                        <button class="save">Add</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
