@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticos-Ride-Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
 
 
 </head>
@@ -19,26 +19,21 @@
                     <div class="p-2">
                         <img class="image-size" src="../img/Logo.png" alt="Car Travel Image">
                     </div>
-                    <div class="p-2">
-
+                    <div class="p-">
                         <div class="relative" style="display: flex;">
-                            <div class="menu-item" id="dashboard">Dashboard</div>
-                            <div class="menu-item" id="rides">Rides</div>
-                            <div class="menu-item" id="settings"> Settings</div>
-
+                            <a class="menu-item active" href="dashboard.html" id="dashboard">Dashboard</a>
+                            <a class="menu-item" href="ride.html" id="rides">Rides</a>
+                            <a class="menu-item" href="configuration.html" id="config">Settings</a>
                         </div>
                     </div>
-                    <div class="p-2">
-                        <h4 id="currentSection"></h4>
-                    </div>
+                    
                 </div>
-
-
             </div>
+
             <div class="col d-flex justify-content-end mt-auto p-2">
                 Welcome &nbsp;
                 <p id="username"></p>
-                <img class="image-user" src="../img/user.jpg" alt="Car Travel Image">
+                <img class="image-user" src="img/logo.png" alt="Car Travel Image">
             </div>
         </div>
 
@@ -95,36 +90,33 @@
 
 
         <div id="rides-view">
-            <a href="#">Dashboard</a>
-            <span class="arrow">></span>
-            <a href="#">Rides</a>
-            
 
-            </div>
-
-            <div id="settings-view">
-                <a href="#">Dashboard</a>
-                <span class="arrow">> Settings</span>
-                <div class="settings">
-                    <label for="fullname" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="fullname" placeholder="Input text">
-                    <label for="speedAverage" class="form-label">speed Average</label>
-                    <input type="text" class="form-control" id="speedAverage" placeholder="Input text">
-                    <label for="aboutMe" class="form-label">About Me</label>
-                    <div class="aboutMe">
-                        <textarea id="edit" placeholder="Something about me goes here"></textarea>
-                        <div class="button">
-                            <a href="dashboard.html">Cancel</a>
-                            <button class="save">Add</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
 
+        <div id="settings-view">
+            <br>
+            <div class="settings">
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Input text">
+                <br>
+                <label for="speedAverage" class="form-label">Speed Average</label>
+                <input type="text" class="form-control" id="speedAverage" placeholder="Input text">
+                <br>
+                <label for="aboutMe" class="form-label">About Me</label>
+                <div class="aboutMe">
+                    <textarea id="aboutMe" placeholder="Something about me goes here"></textarea>
+                    <div class="button">
+                        <a href="dashboard.html">Cancel</a>
+                        <button class="save">Add</button>
+                    </div>
+                </div>
+            </div>
 
-        <script type="text/javascript" src="../js/dashboard.js"></script>
+        </div>
+    </div>
+
+
+
 
 </body>
 

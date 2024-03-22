@@ -23,7 +23,25 @@
     border-bottom-left-radius: 10px;
 }
 
+.card {
+    padding: 10px;
+    /* Add padding around the content within the card */
+}
 
+.col {
+    width: 32%;
+    /* Adjust width as needed */
+    margin: 0 5px;
+    /* Add left and right margin */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    /* Space elements evenly */
+    align-items: center;
+    /* Vertically align elements */
+}
 
 #rides {
     border-right: 0px solid;
@@ -135,16 +153,42 @@
     top: 100px;
 }
 
+.buttons-container {
+    display: flex;
+    /* Enables flexbox layout */
+}
+
 .login {
-    align-items: baseline;
+    align-items: end;
 }
 
 #login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    /* Hace que el botón se mantenga en una posición fija */
+    top: 20px;
+    /* Establece el botón a 20px desde el borde superior */
+    right: 20px;
+    /* Establece el botón a 20px desde el borde derecho */
 }
 
+.login-container {
+    position: fixed;
+    /* Makes the container fixed at the bottom */
+    bottom: 20px;
+    /* Sets the container 20px from the bottom edge */
+    width: 100%;
+    /* Sets the container width to 100% */
+    display: grid;
+    /* Enables CSS Grid layout */
+    grid-template-columns: repeat(2, 1fr);
+    /* Creates two columns */
+    gap: 10px;
+    /* Adds a gap between the columns */
+}
+
+
+
+/* Estilos para tamaños de pantalla pequeños */
 @media only screen and (max-width: 768px) {
     .image-size {
         height: auto;

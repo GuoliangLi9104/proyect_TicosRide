@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ticos-Ride-Config</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="styles/dashboard.css">
 </head>
 
 <body>
@@ -20,10 +20,10 @@
           <div class="p-2">
 
             <div class="relative" style="display: flex;">
-              <div class="menu-item" id="dashboard">Dashboard</div>
-              <div class="menu-item" id="rides">Rides</div>
-              <div class="menu-item active" id="settings">Settings</div>
-            </div>
+              <a class="menu-item" href="dashboard.html" id="dashboard">Dashboard</a>
+              <a class="menu-item " href="ride.html" id="rides">Rides</a>
+              <a class="menu-item active" href="configuration.html" id="rides">Settings</a>
+          </div>
           </div>
           <div class="p-2">
             <h4 id="currentSection"></h4>
@@ -44,15 +44,10 @@
     <h2>Rides</h2>
 
     <div id="rides-view">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Rides</li>
-        </ol>
-      </nav>
-      <a href="#">Dashboard</a>
+      
+      <a href="dashboard.html">Dashboard</a>
       <span class="arrow">></span>
-      <a href="#">Rides</a>
+      <a href="configuration.html">Settings</a>
 
 
     </div>
